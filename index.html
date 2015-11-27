@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://service.kathrin-hoffmann.de/museum-2/museum.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="dynamic.css" type="text/css" media="screen" />	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<!-- IE9-11 unterstützen das main-Element noch nicht -->
+	<style type="text/css">
+		main, header, nav, section, footer {display: block;}
+	</style>
+    <!-- IE<=8.0 über JavaScript mitteilen, dass „neue“ HTML-Elemente erzeugt wurden, die er nun nutzen darf: -->
+	<script>
+	document.createElement("header");
+	document.createElement("nav");
+	document.createElement("article");
+	document.createElement("section");
+	document.createElement("footer");
+	</script>
+	<script src="script.js"></script>
+    
+  </head>
+  
+  <body>
+
+	<div style="position:absolute; top:0px; right:0px;">
+		<button onclick="test(0)">No Beacon</button>
+		<button onclick="test(1)">1 Bcn</button>
+		<button onclick="test(2)">2 Bcn</button>
+		<button onclick="test(3)">3 Bcn</button>
+	</div>
+
+
+	<header>
+		<img src="http://service.kathrin-hoffmann.de/museum-2/img/logo.gif" alt="logo">
+	</header>
+
+<div class="row teaser-none">
+		<section class="col-small-1 col-medium-1 col-large-1">
+			<h1>Nichts in der Nähe</h1>
+		</section>
+	</div>
+
+	<div class="row teaser-main">
+		<section class="col-small-1 col-medium-1 col-large-1">
+			<h1>Vor Ihnen:</h1>
+			<!--<div class="isp-2pr">
+				<img class="center" src="http://service.kathrin-hoffmann.de/museum-2/img/vitrine.jpg" alt="Vitrine aus China">
+			</div>
+			<div class="isp-2">
+				Eine der stimmungsvoll dekorierten Vitrinen des Themas 163 zeigte Barren als Zahlungsmittel im alten China. 
+				Mehr als 50 Sycee genannte Silberbarren wurden hier ausgestellt.<br>
+				<a href="mehr.html"><button type="button">Mehr erfahren ...</button></a>
+			</div>-->
+		</section>
+	</div>
+	
+	<div class="row">
+		<section class="col-small-1 col-medium-1 col-large-1 hinweis">
+			Automatisch Informationen öffnen falls in unmittelbarer Nähe&nbsp;&nbsp;
+			<img class="right" src="http://service.kathrin-hoffmann.de/museum-2/img/switch-on.jpg" alt="Switch Button">
+		</section>
+	</div>
+
+	<div class="row teaser-more">
+		<section class="col-small-1 col-medium-1 col-large-1">
+			<div class="">
+				<h1>Ebenfalls in der Nähe:</h1>
+			</div>			
+		</section>
+	</div>
+
+	<div class="row">
+		<section class="col-small-1 col-medium-1 col-large-1">
+			<div class="headline">
+				<h2><span id="count_discovered">0</span> von <span id="count_total">0</span> Exponaten entdeckt</h2>
+			</div>
+			<div class="row" data-uuid="B1">
+				<div class="isp-3-30pr">
+					<img src="http://service.kathrin-hoffmann.de/museum-2/img/spar-2.jpg" alt="Exponat xy">
+				</div>
+				<div class="isp-3-60">
+					<h2>Exponat 1</h2>
+					<p>Lorem ipsum hallo Welt!</p>
+					<p class="detail">
+						Eine der stimmungsvoll dekorierten Vitrinen des Themas 163 zeigte Barren als Zahlungsmittel im alten China. 
+						Mehr als 50 Sycee genannte Silberbarren wurden hier ausgestellt.<br>
+						<a href="http://service.kathrin-hoffmann.de/museum/raum1.html"><button type="button">Mehr erfahren ...</button></a>
+					</p>								
+				</div>
+				<div class="isp-3-10 right">
+					<img class="icon info" src="http://service.kathrin-hoffmann.de/museum-2/img/infobutton.png" alt="Infobutton">
+					<img class="icon checked" src="http://service.kathrin-hoffmann.de/museum-2/img/okbutton.png" alt="OK-Button">
+				</div>
+			</div>
+			<div class="row" data-uuid="B2">
+				<div class="isp-3-30pr">
+					<img src="http://service.kathrin-hoffmann.de/museum-2/img/spar-2.jpg" alt="Exponat xy">
+				</div>
+				<div class="isp-3-60">
+					<h2>Exponat 2</h2>
+					<p>Lorem ipsum hallo Welt!</p>
+					<p class="detail">
+						Eine der stimmungsvoll dekorierten Vitrinen des Themas 163 zeigte Barren als Zahlungsmittel im alten China. 
+						Mehr als 50 Sycee genannte Silberbarren wurden hier ausgestellt.<br>
+						<a href="http://service.kathrin-hoffmann.de/museum/raum2.html"><button type="button">Mehr erfahren ...</button></a>
+					</p>					
+				</div>
+				<div class="isp-3-10 right">
+					<img class="icon info" src="http://service.kathrin-hoffmann.de/museum-2/img/infobutton.png" alt="Infobutton">
+					<img class="icon checked" src="http://service.kathrin-hoffmann.de/museum-2/img/okbutton.png" alt="OK-Button">
+				</div>
+			</div>			
+			<div class="row" data-uuid="B3">
+				<div class="isp-3-30pr">
+					<img src="http://service.kathrin-hoffmann.de/museum-2/img/spar-7.jpg" alt="Exponat xy">
+				</div>
+				<div class="isp-3-60">
+					<h2>Exponat 3</h2>
+					<p>Lorem ipsum hallo Welt!</p>
+					<p class="detail">
+						Eine der stimmungsvoll dekorierten Vitrinen des Themas 163 zeigte Barren als Zahlungsmittel im alten China. 
+						Mehr als 50 Sycee genannte Silberbarren wurden hier ausgestellt.<br>
+						<a href="http://service.kathrin-hoffmann.de/museum/raum3.html"><button type="button">Mehr erfahren ...</button></a>
+					</p>					
+				</div>
+					
+				<div class="isp-3-10 right">
+					<img class="icon info" src="http://service.kathrin-hoffmann.de/museum-2/img/infobutton.png" alt="Infobutton">
+					<img class="icon checked" src="http://service.kathrin-hoffmann.de/museum-2/img/okbutton.png" alt="OK-Button">
+				</div>
+				
+			</div>
+			<div class="row" data-uuid="B4">
+				<div class="isp-3-30pr">
+					<img src="http://service.kathrin-hoffmann.de/museum-2/img/spar-7.jpg" alt="Exponat xy">
+				</div>
+				<div class="isp-3-60">
+					<h2>Exponat 4</h2>
+					<p>Lorem ipsum hallo Welt!</p>
+					<p class="detail">
+						Eine der stimmungsvoll dekorierten Vitrinen des Themas 163 zeigte Barren als Zahlungsmittel im alten China. 
+						Mehr als 50 Sycee genannte Silberbarren wurden hier ausgestellt.<br>
+						<a href="http://service.kathrin-hoffmann.de/museum-2/mehr.html"><button type="button">Mehr erfahren ...</button></a>
+					</p>					
+				</div>
+				<div class="isp-3-10 right">
+					<img class="icon info" src="http://service.kathrin-hoffmann.de/museum-2/img/infobutton.png" alt="Infobutton">
+					<img class="icon checked" src="http://service.kathrin-hoffmann.de/museum-2/img/okbutton.png" alt="OK-Button">
+				</div>
+			</div>
+		</section>
+	</div>
+  
+  </body>
+</html>
