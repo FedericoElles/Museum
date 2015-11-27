@@ -1,0 +1,100 @@
+
+/* Vor Ihnen sichtbar */
+body.teaser-1 {
+	
+} 
+
+
+.teaser-main, .teaser-more {
+	display:none;
+}
+
+body.teaser-1 .teaser-main {
+	display: block;
+	height:400px;
+}
+
+body.teaser-1 .teaser-none {
+	display: none;
+}
+
+/* In der Nähe 1 sichtbar */
+body.teaser-2 {
+	
+}
+
+body.teaser-2 .teaser-more{
+	display: block;
+	height: 200px;
+}
+
+
+
+/* In der Nähe 2 sichtbar */
+body.teaser-3 {
+	
+}
+
+
+body.teaser-3 .teaser-more{
+	display: block;
+	height: 400px;
+}
+
+/* Rows can be positioned */
+.row.positioned {
+	position: absolute;
+    width: 96%;
+}
+
+/* TEMP HACK*/
+.row.position-1{
+    top: 160px;
+}
+
+.row.position-1 .isp-3-60{
+	width: 60%;
+}
+
+.row.position-2{
+    top: 610px;
+}
+
+.row.position-3{
+    top: 790px;
+}
+
+/* Details nur bei Exponaten in der Nähe anzeigen */
+.row .detail {
+	display: none;
+}
+
+.row.position-1 .detail {
+	display: block;
+}
+
+
+.row.hidden {
+	display: none;
+}
+
+.row.discovered {
+	display: block;
+}
+
+/* Besuchte Exponate */
+.row img.icon.checked{
+	display: none;
+}
+
+.row img.icon.info,{
+	display: inline-block;
+}
+
+.row.visited img.icon.checked{
+	display: inline-block;
+}
+
+.row.visited img.icon.info{
+	display: none;
+}
